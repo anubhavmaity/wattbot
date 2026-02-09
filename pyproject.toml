@@ -28,3 +28,4 @@ dependencies = {file = ["requirements.txt"]}
 include = ["wattbot"]
 
 [tool.nbdev]
+tst_flags = "notest"
