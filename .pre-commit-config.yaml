@@ -1,6 +1,18 @@
 repos:
-- repo: https://github.com/fastai/nbdev
-  rev: 2.2.10
+- repo: local
   hooks:
-  - id: nbdev_clean
-  - id: nbdev_export
+  - &hook
+    id: nbdev-clean
+    name: nbdev-clean
+    entry: nbdev-clean
+    description: "Clean metadata from notebooks to avoid merge conflicts"
+    language: python
+    always_run: true
+    pass_filenames: false
+
+  - <<: *hook
+    id: nbdev-export
+    name: nbdev-export
+    entry: nbdev-export
+    description: "Export notebooks to modules and build modidx"
+
