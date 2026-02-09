@@ -1,0 +1,9 @@
+project:
+  output-dir: _docs
+
+website:
+  title: "wattbot"
+  site-url: "https://anubhavmaity.github.io/wattbot"
+  description: "This repository is based on a kaggle competition named Wattbot"
+  repo-branch: main
+  repo-url: "https://github.com/anubhavmaity/wattbot"

@@ -1,0 +1,17 @@
+website:
+  sidebar:
+    contents:
+      - index.ipynb
+      - 00_eda.ipynb
+      - 01_retriever.ipynb
+      - 02_generator.ipynb
+      - 03_evaluate.ipynb
+      - 04_submission_v1.ipynb
+      - 04_submission_v2.ipynb
+      - 04_submission_v3.ipynb
+      - 05_utils.ipynb
+      - xx_docling.ipynb
+      - xx_multi_llm_calls.ipynb
+      - xx_sdk_character.ipynb
+      - xx_sdk_docling.ipynb
+      - xx_sdk_markdown.ipynb
