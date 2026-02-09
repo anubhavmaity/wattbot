@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "wattbot"
-dynamic = ["version"]
+dynamic = ["version", "dependencies"]
 description = "This repository is based on a kaggle competition named Wattbot"
 readme = "README.md"
 requires-python = ">=3.12"
@@ -12,7 +12,6 @@ license = {text = "Apache-2.0"}
 authors = [{name = "anubhavmaity", email = "anubhavmaity7@gmail.com"}]
 keywords = ['nbdev', 'jupyter', 'notebook', 'python']
 classifiers = ["Natural Language :: English", "Intended Audience :: Developers", "Development Status :: 3 - Alpha", "Programming Language :: Python :: 3", "Programming Language :: Python :: 3 :: Only"]
-dependencies = {file = ["requirements.txt"]}
 
 [project.urls]
 Repository = "https://github.com/anubhavmaity/wattbot"
@@ -23,6 +22,7 @@ wattbot = "wattbot._modidx:d"
 
 [tool.setuptools.dynamic]
 version = {attr = "wattbot.__version__"}
+dependencies = {file = ["requirements.txt"]}
 
 [tool.setuptools.packages.find]
 include = ["wattbot"]
