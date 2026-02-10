@@ -118,9 +118,9 @@ of chunking strategies, model performance, and retrieval methods.
 
 ### PDF Extraction
 
-Used [Datalab](http://datalab.to/) for markdown extraction (~\$2.02 for
-31 PDFs). Preserves layout, tables, and images better than pypdf or
-Docling.
+- Used `pypdf` for text extraction from PDF
+- Used [Datalab](http://datalab.to/) for markdown extraction. Preserves
+  layout, tables, and images better than `pypdf` or `Docling`.
 
 ### Search Strategy
 
@@ -137,8 +137,8 @@ search. Combined both with reranking model for optimal retrieval.
 ### Chunking
 
 - Character/Token based chunking with overlap
-- MarkdownTextSplitter from LangChain with sliding window overlap
-  maintained context across chunk boundaries.
+- Markdown chunking with sliding window overlap maintained context
+  across chunk boundaries.
 
 ## Project Structure
 
