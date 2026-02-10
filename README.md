@@ -118,13 +118,14 @@ of chunking strategies, model performance, and retrieval methods.
 
 ### PDF Extraction
 
-Used Datalab for markdown extraction (~\$2.02 for 31 PDFs). Preserves
-layout, tables, and images better than pypdf or Docling.
+Used [Datalab](http://datalab.to/) for markdown extraction (~\$2.02 for
+31 PDFs). Preserves layout, tables, and images better than pypdf or
+Docling.
 
 ### Search Strategy
 
 Started with BM25 lexical search. Added Qwen 8B embeddings for semantic
-search. Combined both with reranking for optimal retrieval.
+search. Combined both with reranking model for optimal retrieval.
 
 ### Prompting
 
@@ -135,8 +136,9 @@ search. Combined both with reranking for optimal retrieval.
 
 ### Chunking
 
-MarkdownTextSplitter from LangChain with sliding window overlap
-maintained context across chunk boundaries.
+- Character/Token based chunking with overlap
+- MarkdownTextSplitter from LangChain with sliding window overlap
+  maintained context across chunk boundaries.
 
 ## Project Structure
 
@@ -156,5 +158,6 @@ approach.
 
 Built using [Solveit](https://solve.it.com/) for development workflow.
 
-Competition hosted by Kaggle: [WattBot
+Competition organized by Christopher Endemann, Dhruba Jyoti Paul, and
+Annie Zhao on Kaggle: [WattBot
 2025](https://www.kaggle.com/competitions/WattBot2025)
