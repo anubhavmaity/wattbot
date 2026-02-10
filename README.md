@@ -112,7 +112,7 @@ of chunking strategies, model performance, and retrieval methods.
   - Neighbor chunk increased accuracy
   - Proprietary models (OpenAI) showed improvements but exceeded budget
 
-![Leaderboard Ranking](../images/leaderboard_ranking.png)
+![Leaderboard Ranking](images/leaderboard_ranking.png)
 
 ## Technical Highlights
 
