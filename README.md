@@ -157,6 +157,9 @@ approach.
 ## Acknowledgments
 
 Built using [Solveit](https://solve.it.com/) for development workflow.
+Solveit dialogues:
+[Exploration](nbs/06_wattbot_exploration_solveit.ipynb) and
+[SDK](nbs/06_wattbot_sdk_solveit.ipynb)
 
 Competition organized by Christopher Endemann, Dhruba Jyoti Paul, and
 Annie Zhao on Kaggle: [WattBot

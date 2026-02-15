@@ -20,13 +20,18 @@ data_path = fc.Path(fc.Path.cwd().parent/'data')
 data_path.ls(file_exts=['.csv'])
 
 # %% ../nbs/00_eda.ipynb #83f379a8
-def metadata(): return pd.read_csv(data_path/'metadata.csv', encoding='latin-1')
+def metadata(): 
+    """Returns the metadata.csv as a dataframe"""
+    return pd.read_csv(data_path/'metadata.csv', encoding='latin-1')
 
 # %% ../nbs/00_eda.ipynb #13ecf0e6
-def train(): return pd.read_csv(data_path/'train_QA.csv')
+def train(): 
+    """Returns the train_QA.csv as dataframe"""
+    return pd.read_csv(data_path/'train_QA.csv')
 
 # %% ../nbs/00_eda.ipynb #bbb3ab8e
 def get_train_data(idx=-1):
+    """Retrieves a row from train_QA.csv"""
     t = train()
     if idx == -1: idx = random.randint(0, len(t))
     return fc.NS(**t.iloc[idx])
